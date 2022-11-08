@@ -20,12 +20,16 @@ print ("You just typed: " + numberStr)
 # This means we cannot use numberStr in mathematical equation
 
 # Convert numberStr to integer variable called numberInt
+
 numberInt = int(numberStr)
-print(numberInt+10)
-if numberInt > 6:
-  print("You just typed a number greater than 6")
-  
-elif numberInt < 6:
-  print("You just typed a number less than 6") 
+
+# Declare a value to be used in comparison
+
+b = 6 # b is number not string
+
+if numberInt > b:
+  print("You just typed a number greater than " + str(b) )
+elif numberInt < b:
+  print("You just typed a number less than " + str(b) ) 
 else:
-  print("You just typed 6")
+  print("You just typed " + str(b) + "!!!")
